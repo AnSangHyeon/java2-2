@@ -137,8 +137,7 @@ System.in을 사용하면 읽은 바이터 정보를 문자나 숫자로 변환�
 Scanner sc = new Scanner(System.in);
 이런식으로 sc라는 이름의 객체를 생성할수 있다
 
-## Scanner객체는 System.in으로 하여금 키보드로 
-## 입력을 받고 문자,문자열,정수,실수등으로 변환하여 리턴해준다
+## Scanner객체는 System.in으로 하여금 키보드로 <br>입력을 받고 문자,문자열,정수,실수등으로 변환하여 리턴해준다
 
 # Scanner 사용할떄 import
 Scanner를 사용하기위해 java.util.Scanner를 import해야한다
@@ -158,6 +157,7 @@ Scanner를 사용하기위해 java.util.Scanner를 import해야한다
   void close() 
   boolean hasNext() -> 입력할게 있으면 true를 반환하고 아니면 false를 반환
 }
+
 
 
 
