@@ -158,9 +158,16 @@ Scanner를 사용하기위해 java.util.Scanner를 import해야한다
   boolean hasNext() -> 입력할게 있으면 true를 반환하고 아니면 false를 반환
 }
 
-
-
-
+# 예외발생 (try-catch-finally문)
+```java
+try {
+  예외가 발생할 가능성이 있는 실행문
+} catch(예외타입 선언) {
+  예외 처리문
+} finally {
+  예외상관없이 무조건 실행되는 문장
+}
+```
 
 
 
