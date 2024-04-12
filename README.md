@@ -235,3 +235,34 @@ non-static변수는 객체를 생성해야한다
 예: Example obj = new Example();
 ## 객체이름.변수이름 <-이런식으로 접근  
 ### static변수는 객체로도 접근이 가능하지만<br> 클래스로 접근하는게 가독성을 좋게하는 습관이다
+
+# 상속
+class colorPoint extends Point이런식으로 
+슈퍼클래스 Point를 colorPint클래스에 상속받을수있다
+
+## final키워드
+클래스 선언할떄 final키워드를 사용하면 상속받지못한다
+
+## getter, setter
+getter, setter를 사용하면 서브클래스에서 슈퍼클래스에있는  
+private변수에 접근이 가능하다  
+getter는 가져오는것이고  
+setter는 값을 설정할수있다  
+
+# 접근지정자  
+public은 제일 보수적이지 않은 지정자이고  
+다른클래스 다른패키지 어디든 접근이 가능하다  
+
+private은 제발 보수적인 지정자이고  
+다른클래스에서 접근이 불가능하지만 getter, setter를  
+사용하여 접근이 가능하다
+하지만 클래스내부에선 접근이 가능하다    
+
+protected는 같은 패키지내에선 모두 접근이 가능하다  
+
+defalt는 같은 패키지내에선 모두 접근이 가능하지만  
+다른패키지에선 접근이 불가능하다
+
+# 업캐스팅, 다운캐스팅
+# instanceof 
+# 시간부족 담주에 까먹지말고 적기 ↑
