@@ -201,7 +201,7 @@ public class circle {
 다형성(polymorphism)은 같은 이름의 메소드가 클래스 <br>혹은 객체에 따라 다르게 구현되는것이다.
 ## 메소드 오버라이딩(overriding)은 자신의 특징에 맞게 동일한 이름으로 다시 구현하는것이다
 
-## 메소드 오버로딩(Overloading)은 같은 이름의 메소드를 여러 개 만드는것이다
+## 메소드 오버로딩(Overloading)은 한개의 클래스 안에 같은 이름의 메소드를 여러 개 만드는것이다
 
 # this란 
 해당 객체에 대한 레퍼런스로 메소드안에서 사용된다
@@ -263,6 +263,22 @@ protected는 같은 패키지내에선 모두 접근이 가능하다
 defalt는 같은 패키지내에선 모두 접근이 가능하지만  
 다른패키지에선 접근이 불가능하다
 
-# 업캐스팅, 다운캐스팅
+# 업캐스팅
+업캐스팅은 하위 클래스 객체를 수퍼클래스 객체로 변환한다
+예: Animal <- 수퍼클레스 | Dog <- 서브클래스 
+```java
+Animal animal = new Dog();
+```
+
+# 다운캐스팅
+다운캐스팅은 업캐스팅된 객체를 다시 하위 클래스로 변환한다
+예: Animal <- 수퍼클레스 | Dog <- 서브클래스 
+```java
+Animal animal = new Dog(); //업캐스팅된 Dog객체
+Dog dog = (Dog) animal; //다운캐스팅
+```
 # instanceof 
-# 시간부족 담주에 까먹지말고 적기 ↑
+확인하려는 객체가 어떤클래스의 객체인지 확인하는것이다
+반환값: True, False
+사용법: if(object instanceof className)
+
