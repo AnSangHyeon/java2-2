@@ -302,3 +302,29 @@ add로 추가했을때 그 자리에 값이 있으면 한칸씩 밀려나고 값
 ArrayList는 Vector와 거의 도일하지만 동기화를 하지않음 
 요소를 삭제하거나 삽입할때 충돌이 발생할수도 있다
 
+# Iterator
+Vector, ArrayList, LinkedList, Set 컬렉션의 요소를 순차적으로 검색할때 편리하게 사용할수있다
+
+# Hash Map
+데이터를 키(key)와 값(value)으로 저장한다
+get("keyName") <- 데이터의 값을 가져온다
+keySet() <- 데이터의 키값을 가져온다
+put("keyName", "value") <- 데이터를 삽입할때 사용한다
+
+# 제네릭(Generics)
+객체를 생성할때 
+Vector<타입> <-이런식으로 타입을 지정하는방식이 제네릭이다
+
+# AWT
+자바가 처음나왔을때 함께 배포된 GUI패키지이다
+운영체제의 도움을받아 GUI를 그리기때문에 속도는 빠르나 
+운영체제에 부담을 주므로 
+중량 컴퓨넌트(heavy weight component)라고 불린다
+
+# 스윙(Swing)
+AWT와 달리 자바언어로 작성되어있고 
+운영체제의 도움을 받지않으므로 경량 
+컴퓨넌트(light weight component)라고 불린다
+컴포넌트 이름이 J로 시작한다
+스윙을 사용하기 위해 AWT 패키지가 필요하다
+
