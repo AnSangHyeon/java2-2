@@ -277,8 +277,28 @@ Animal animal = new Dog();
 Animal animal = new Dog(); //업캐스팅된 Dog객체
 Dog dog = (Dog) animal; //다운캐스팅
 ```
+
 # instanceof 
 확인하려는 객체가 어떤클래스의 객체인지 확인하는것이다
 반환값: True, False
 사용법: if(object instanceof className)
+
+# 컬렉션(Collection)이란
+컬렉션(Collection)이란 자바 프로그래밍 언어에서 데이터를 효율적으로 저장하고 관리하기 위한 구조와 그 관련 기능을 통칭하는 용어이다
+
+# Vector&lt;E&gt;
+요소의 개수가 넘치면 자동으로 길이조절
+삽입, 삭제에 따라 자동으로 요소의 위치조정
+## 삽입가능한 것
+객체, null
+기본 타입의 값은 Wrapper객체로 만들어 저장
+## 객체 삽입
+앞,뒤,중간 가능
+
+# 값 추가 add
+add로 추가했을때 그 자리에 값이 있으면 한칸씩 밀려나고 값이 없다면 그냥 들어감
+
+# ArrayList
+ArrayList는 Vector와 거의 도일하지만 동기화를 하지않음 
+요소를 삭제하거나 삽입할때 충돌이 발생할수도 있다
 

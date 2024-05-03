@@ -17,9 +17,9 @@ public class change_this {
     this.author = author;
   }
   public static void main(String[] args) {
-    change_this lp = new change_this("어린왕자", "생텍쥐페리");
+    // change_this lp = new change_this("어린왕자", "생텍쥐페리");
     change_this ls = new change_this("춘향전");
-    change_this eb = new change_this();
+    // change_this eb = new change_this();
     ls.show();
   }  
 }
