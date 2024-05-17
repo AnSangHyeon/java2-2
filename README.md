@@ -1,5 +1,42 @@
 # java2-2
-#안상현202330219
+# 안상현202330219
+
+# 5월 17일 
+
+# 배치 관리자 대표 유형 4 가지
+## FlowLayout 배치관리자
+컴포넌트가 삽입되는 순서대로 왼쪽에서 오른쪽으로 배치
+배치할 공간이 없으면 아래로 내려와서 반복한다.
+## BorderLayout 배치관리자
+북쪽(North), 남쪽(South), 동쪽(East), 서쪽(West), 그리고 중앙(Center)으로 배치한다 
+컴포넌트의 크기는 영역의 크기와 동일하게 설정한다.
+## GridLayout 배치관리자
+컴포넌트를 격자(grid) 형태로 배치한다. <br>
+모든 셀은 같은 크기이다. <br>
+행과 열의 수를 지정하여 레이아웃을 설정한다.
+## CardLayout 배치관리자
+여러 컴포넌트를 동일한 공간에 중첩하여 배치한다. <br>
+각 컴포넌트는 카드처럼 관리되며, 하나의 컴포넌트만 한 번에 보인다. <br>
+카드 간 전환이 가능하다.
+# 컨테이너의 디폴트 배치관리자
+Window, JWindow -> BorderLayout
+Frame, JFrame -> BorderLayout
+Dialog, JDialog -> BorderLayout
+Panel, JPanel -> FlowLayout
+Applet, JApplet -> FlowLayout
+
+# setLayout() 메소드
+Container 클래스의 ```setLayout()``` 메소드를 호출하면 
+배치관리자를 설정할 수 있다 
+
+예: JPanel에 BorderLayout 배치관리자를 설정
+```java
+JPanel p = new JPanel();
+p.setLayout(new BorderLayout());
+``` 
+
+
+# 이전것들 ↓
 
 # h1
 ## h2
