@@ -1,8 +1,70 @@
 # java2-2
 # 안상현202330219
 
-# 5월 17일 
+# 5월 24일
+# 이벤트 기반 프로그래밍(Event Driven Programming)
+## 이벤트(Event)
+사용자 입력(예: 버튼 클릭, 키보드 입력 등)에 의해 발생하는 상황이다.
+## 이벤트 핸들러(Event Handler)
+이벤트가 발생했을 때 실행되는 메서드입니다. Java에서는 이벤트 리스너(Event Listener)라는 인터페이스를 구현하여 핸들러를 정의한다.
+## 이벤트 리스너(Event Listener)
+특정 이벤트를 처리하기 위해 구현해야 하는 인터페이스이다.
+### 리스너 사용이유는 가독성이 좋아지고 리스너 안에 핸들러를 <br>사용하면 여러가지 핸들러를 상황별로 골라쓸수있다
+```java
+// 리스너 객체 생성
+ActionListener buttonClickHandler = new ActionListener() {
+    // 핸들러를 만들어 어떤 동작을 할지 정함
+    public void actionPerformed(ActionEvent e) {
+        JOptionPane.showMessageDialog(null, "Button was clicked!");
+    }
+};
+```
+# 클래스 리스너 종류
+# 독립 클래스(Separate Class)
+리스너 클래스를 별도로 정의하여 다른 클래스에서도 재사용할 수 있습니다.
+```java
+class ButtonClickListener implements ActionListener {
 
+}
+```
+# 내부 클래스(Inner Class)
+메인 클래스 내부에 리스너 클래스를 정의하여 메인 클래스와 밀접하게 관련된 이벤트 처리를 구현합니다.
+## 여러 클래스에서 작업하기 힘들다
+```java
+public class InnerClassExample {
+  public static void main(String[] args) {
+    class ButtonClickListener implements ActionListener {
+    
+    }
+  }
+}
+```
+# 익명 클래스(Anonymous Class)
+리스너 클래스를 즉석에서 정의하고 객체를 생성하여 간결하게 코드를 작성합니다.
+## 재사용이 힘들다
+```java
+button.addActionListener(new ActionListener() {
+
+});
+```
+# 어댑터(Adapter)클래스 
+리스너 어댑터는 이벤트 리스너를 구현할 때 모든 메서드를 직접 구현해야 하는 번거로움을 줄여주는 도우미 클래스이다.
+## 어댑터를 사용하지않으면 모든 메소드를 직접 구현해야하는데<br>어댑터를 사용하면 아래 예제처럼 사용할 이벤트만 <br>사용하면 된다 그리고 implements 가 아닌 extends를 사용한다
+```java
+class MyMouseListener extends MouseAdapter {
+  public void mouseClicked(MouseEvent e) {
+    System.out.println("Mouse Clicked");
+  }
+}
+```
+# ketListener
+## keyPressed(): 키를 누를 때 호출된다.
+## keyReleased(): 키를 뗄 때 호출된다.
+## keyTyped(): 키를 타이핑할 때 호출된다.
+
+
+
+# 5월 17일 
 # 배치 관리자 대표 유형 4 가지
 ## FlowLayout 배치관리자
 컴포넌트가 삽입되는 순서대로 왼쪽에서 오른쪽으로 배치
