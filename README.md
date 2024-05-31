@@ -1,6 +1,11 @@
 # java2-2
 # 안상현202330219
 
+# 5월 31일
+# JComponent
+## Swing은 Java로 GUI를 작성하기 위한 라이브러리 중 하나로, javax.swing 패키지에 속해 있습니다.<br>JComponent는 Container 클래스의 하위 클래스이며,<br> 모든 Swing 컴포넌트의 공통 기능을 제공한다.
+
+
 # 5월 24일
 # 이벤트 기반 프로그래밍(Event Driven Programming)
 ## 이벤트(Event)
